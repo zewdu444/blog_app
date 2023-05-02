@@ -1,4 +1,4 @@
 class Post < ApplicationRecord
-  belongs_to :users, counter_cache: true
-  has_many :likes, :comments
+  belongs_to :user, class_name: "User", counter_cache: true
+  has_many :comments, :likes
 end
