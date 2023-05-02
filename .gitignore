@@ -29,3 +29,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore env files which are used to store the credentials.
+/config/env.rb
+
