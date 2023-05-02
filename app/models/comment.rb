@@ -1,4 +1,4 @@
 class Comment < ApplicationRecord
   belongs_to :users
-  belongs_to :posts , counter_cache: true
+  belongs_to :posts, counter_cache: true
 end

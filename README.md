@@ -31,8 +31,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- [Keep track of all things own by a user]
-- [Created using ruby to keep a records of different types of things a user own: books, music albums, movies, and games]
+- ORM model
+- User, Comment, Post, and like model
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -46,7 +47,7 @@ In order to run this project you need:
 
 - Command line or terminal
 - IDE such as VsCode.
-- Ruby needs to be installed on your system.
+- Rails needs to be installed on your system.
 
 ### Setup
 
@@ -54,8 +55,8 @@ Clone this repository to your desired folder:
 Example command:
 
 ```sh
-  git clone https://github.com/zewdu444/catalog_my_things.git
-  cd catalog_my_things
+  git clone https://github.com/zewdu444/blog_app.git
+  cd blog_app
 
 ```
 
@@ -64,7 +65,7 @@ Example command:
 Example command:
 
 ```sh
-  cd catalog_my_things
+  cd blog_app
   bundle install (install all dependencies)
 
 ```
@@ -74,7 +75,7 @@ Example command:
 To run the project redirecting to the root directory of the project and run the following command:
 
 ```sh
- ruby main.rb (to run console application)
+ bin/rails server (to run web application)
 
 ```
 
@@ -101,8 +102,7 @@ To test the web app run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [Add web interface]
-- [Improve unit tests]
+- [Validations and Model specs.]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,7 +110,7 @@ To test the web app run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/zewdu444/catalog_my_things/issues).
+Feel free to check the [issues page](https://github.com/zewdu444/blog_app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
