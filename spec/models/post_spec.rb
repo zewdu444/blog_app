@@ -45,23 +45,22 @@ RSpec.describe Post, type: :model do
   end
   describe '#five_most_recent_comments, counter private methods' do
     let(:user1) { User.new(name: 'Jane') }
-    let(:post) { Post.new(author: user1, text:'1', title:"1"  ) }
-    let!(:comment1) { Comment.new(author: user1, post:post, text:'1' ) }
-    let!(:comment2) { Comment.new(author: user1, post:post, text:'2' ) }
-    let!(:comment3) { Comment.new(author: user1, post:post, text:'3' ) }
-    let!(:comment4) { Comment.new(author: user1, post:post, text:'4' ) }
-    let!(:comment5) { Comment.new(author: user1, post:post, text:'5' ) }
-    let!(:comment6) { Comment.new(author: user1, post:post, text:'6' ) }
+    let(:post) { Post.new(author: user1, text: '1', title: '1') }
+    let!(:comment1) { Comment.new(author: user1, post:, text: '1') }
+    let!(:comment2) { Comment.new(author: user1, post:, text: '2') }
+    let!(:comment3) { Comment.new(author: user1, post:, text: '3') }
+    let!(:comment4) { Comment.new(author: user1, post:, text: '4') }
+    let!(:comment5) { Comment.new(author: user1, post:, text: '5') }
+    let!(:comment6) { Comment.new(author: user1, post:, text: '6') }
     before do
-       post.comments = [comment1, comment2, comment3,comment4,comment5]
-       post.save
+      post.comments = [comment1, comment2, comment3, comment4, comment5]
+      post.save
     end
     it 'returns the five most recent comments' do
-      expect(post.five_most_recent_comments).to eq([comment5, comment4, comment3,comment2,comment1])
+      expect(post.five_most_recent_comments).to eq([comment5, comment4, comment3, comment2, comment1])
     end
     it 'it should update user posts_counter' do
       expect(user1.posts_counter).to eq(2)
     end
   end
-
 end

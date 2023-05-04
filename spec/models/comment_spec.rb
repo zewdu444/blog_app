@@ -13,10 +13,11 @@ RSpec.describe Comment, type: :model do
     likes_counter: 0
   )
 
-  subject(:comment) {
-    Comment.new( text: 'TEst comments',
-      author: user,
-      post:post) }
+  subject(:comment) do
+    Comment.new(text: 'TEst comments',
+                author: user,
+                post:)
+  end
   it 'is valid with valid attributes' do
     expect(comment).to be_valid
   end
@@ -29,5 +30,4 @@ RSpec.describe Comment, type: :model do
     comment.save
     expect(post.comments_counter).to eq(2)
   end
-
 end
