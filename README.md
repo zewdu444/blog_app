@@ -33,6 +33,7 @@
 
 - ORM model
 - User, Comment, Post, and like model
+- Custom methods in each classes
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -84,7 +85,7 @@ To run the project redirecting to the root directory of the project and run the 
 To test the web app run the following command:
 
 ```sh
- rspec spec (  to test the console application)
+ rspec spec (  to test the web application)
 
 ```
 
