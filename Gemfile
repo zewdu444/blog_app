@@ -11,6 +11,9 @@ gem 'sprockets-rails'
 
 gem 'dotenv-rails', groups: %i[development test]
 
+group :development, :test do
+  gem 'rspec-rails', '>= 3.9.0'
+end
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
