@@ -37,6 +37,7 @@
 - Add validation for user and post
 - Test cases for each model
 - Add views, controllers, and routes for each model
+- Test cases for each controller
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -106,7 +107,7 @@ To test the web app run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [controllers specs]
+- [add views for user and posts]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
