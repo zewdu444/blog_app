@@ -1,13 +1,1 @@
-<div>
-  <div>
-   <span> Post # <%=@post.id%> by <%=@post.author.name%></span>
-    <span>Comments:  <%=@post.comments_counter%> Likes:  <%=@post.likes_counter%></span>
-  </div>
-   <p><%=@post.text%></p>
-  <div>
-    <% @post.comments.each do |comment| %>
-       <p><span>Username:</span><%=comment.author.name %>
-        <span>Comment:</span><%=comment.text %> </p>
-       <% end %>
-  </div>
-</div>
+<h1>Here is a detail of posts for a given user</h1>
