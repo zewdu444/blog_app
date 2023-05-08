@@ -36,6 +36,7 @@
 - Custom methods in each classes
 - Add validation for user and post
 - Test cases for each model
+- Add controller and routes for each model
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -105,7 +106,7 @@ To test the web app run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [Setup and controllers.]
+- [Blog app - controllers specs]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
