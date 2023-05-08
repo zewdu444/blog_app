@@ -12,7 +12,7 @@
 <div>
 <ul>
    <% @user.most_three_recent_post.each do |post| %>
-   <li> <p>Post #<%= post.id %> </p>
+   <li> <a href= "<%=@user.id%>/posts/<%=post.id%>">Post #<%= post.id %> </a>
        <p> <%= post.title %> </p>
       <p><span>comments: <%=post.comments_counter%> </span>
        <span>Likes: <%=post.likes_counter%> </span>
@@ -21,4 +21,4 @@
    <% end %>
   </ul>
 </div>
- <div><button>See all posts</button></div>
+<div><button><a href= "<%=@user.id%>/posts/">See all posts</a></button></div>
