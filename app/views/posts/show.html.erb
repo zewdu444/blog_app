@@ -1,13 +1,17 @@
-<div>
-  <div>
-   <span> Post # <%=@post.id%> by <%=@post.author.name%></span>
-    <span>Comments:  <%=@post.comments_counter%> Likes:  <%=@post.likes_counter%></span>
+<div class="post_detail">
+
+  <div class="post_detail_card">
+  <div class="post_detail_card_header">
+    <p class ="post_title"> Post # <%=@post.id%> by <%=@post.author.name%></p>
+    <p>Comments: <%=@post.comments_counter%> Likes:  <%=@post.likes_counter%></p>
   </div>
-   <p><%=@post.text%></p>
   <div>
+    <p><%=@post.text%></p>
+  </div>
+    </div>
+  <div class ="post_detail_comment">
     <% @post.comments.each do |comment| %>
-       <p><span>Username:</span><%=comment.author.name %>
-        <span>Comment:</span><%=comment.text %> </p>
+       <%= render 'shared/comment', comment:comment %>
        <% end %>
   </div>
 </div>

@@ -1,20 +1,19 @@
 
  <%= render 'shared/user', user:@user%>
-<div>
+
+<div class="user_bio">
  <h3>Bio</h3>
-<p><%= @user.bio %><p>
+ <p><%= @user.bio %><p>
 </div>
 
-<div>
-<ul>
+<div class="user_post">
    <% @user.most_three_recent_post.each do |post| %>
-   <li>
+
       <%= render 'shared/post', post:post %>
-    </li>
    <%end%>
-  </ul>
+
 </div>
-<div>
+<div class="button_holder">
 <button>
  <%= link_to 'See all posts', "#{@user.id}/posts" %>
 </button>

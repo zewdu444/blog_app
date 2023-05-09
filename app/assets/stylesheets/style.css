@@ -63,3 +63,151 @@
     text-align: end;
 }
 
+.user_bio {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    border: 1px solid #504d4d;
+    border-radius: 1px;
+    margin-left: 27px;
+    background-color: #fff;
+}
+
+.user_bio > h3{
+    font-size: 25px;
+    padding-left: 15px;
+    color: #000;
+}
+.user_bio > p {
+    padding-left: 15px;
+}
+
+.user_post{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin-left: 27px;
+
+}
+.post_card{
+    border: 1px solid #504d4d;
+    border-radius: 1px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.post_card > h4> a{
+    font-size: 20px;
+    padding-left: 15px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.post_card > h4> a:hover{
+    color: darkcyan;
+}
+
+.post_card > p{
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+
+.post_counter{
+    padding-right: 20px;
+    color: #000;
+    text-align: end;
+}
+
+.button_holder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+ button {
+    border: 1px solid #504d4d;
+    border-radius: 1px;
+    padding: 5px;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 10px;
+
+}
+
+button> a{
+    text-decoration: none;
+    color: #000;
+}
+
+button:hover {
+    color: darkcyan;
+}
+.post_list
+{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin-left: 27px;
+}
+
+.post_comment{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #504d4d;
+    border-radius: 1px;
+    background-color: #fff;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.post_comment > p
+{
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.post_detail{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+
+}
+.post_detail_card {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    border: 1px solid #504d4d;
+    border-radius: 1px;
+    margin-left: 10px;
+    background-color: #fff;
+   padding: 10px;
+}
+
+ .post_detail_card_header {
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.post_detail_card_header > .post_title{
+    font-size: 20px;
+}
+
+.post_detail_comment{
+
+    border: 1px solid #504d4d;
+    border-radius: 1px;
+    background-color: #fff;
+    margin-top: 10px;
+    width: 97%;
+    padding: 10px;
+    margin-left: 11px;
+
+}
