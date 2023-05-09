@@ -1,6 +1,6 @@
 <div>
 <img src="<%= user.photo %>"/>
-<h2><a href= "/users/<%=user.id%>"><%=user.name%></a></h2>
+<h2><%= link_to user.name, user %></h2>
 <p>Number of posts <%= user.posts_counter %></p>
 </div>
 

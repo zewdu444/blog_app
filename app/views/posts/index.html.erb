@@ -1,7 +1,4 @@
-
-
 <%= render 'shared/user', user:@user%>
-
 <div>
 <ul>
    <% @posts.each do |post| %>
@@ -16,5 +13,8 @@
   </ul>
 </div>
 
-<div><button>Pagination</button></div>
+<div>
+<button>Pagination</button>
+<button><%= link_to 'Back', :back %></button>
+</div>
 

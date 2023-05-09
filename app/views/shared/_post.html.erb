@@ -1,6 +1,5 @@
 <div>
-
- <a href= "/users/<%=@user.id%>/posts/<%=post.id%>">Post #<%= post.id %></a>
+ <%= link_to "Post ##{post.id }", "/users/#{@user.id}/posts/#{post.id}" %>
       <p> <%= post.title %> </p>
       <p><span>comments: <%=post.comments_counter%> </span>
        <span>Likes: <%=post.likes_counter%> </span>
