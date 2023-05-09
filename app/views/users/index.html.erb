@@ -1,17 +1,7 @@
-<h1>Here is list of users</h1>
-
 <ul>
-
    <% @users.each do |user| %>
     <li>
-
-      <img src="<%= user.photo %>"/>
-       <h2>
-        <a href= "/users/<%=user.id%>">
-        <%=user.name%>
-       </a>
-       </h2>
-        <p>Number of posts <%= user. posts_counter %></p>
-    </li>
+      <%= render 'shared/user', user:user%>
+   </li>
    <%end%>
 </ul>

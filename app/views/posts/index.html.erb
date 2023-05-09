@@ -1,17 +1,12 @@
-<div>
-  <img src="<%= @users.photo %>"/>
-    <h2><%= @users.name%></h2>
-    <p>Number of posts <%= @users.posts_counter %></p>
-</div>
-<div>
+
+
+<%= render 'shared/user', user:@user%>
+
 <div>
 <ul>
    <% @posts.each do |post| %>
-   <li> <p>Post #<%= post.id %> </p>
-       <p> <%= post.title %> </p>
-      <p><span>comments: <%=post.comments_counter%> </span>
-       <span>Likes: <%=post.likes_counter%> </span>
-       </p>
+   <li>
+      <%= render 'shared/post', post:post %>
     </li>
      <%post.five_most_recent_comments.each do |comment| %>
        <p><span>Username:</span><%=comment.author.name %>
