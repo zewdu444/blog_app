@@ -16,13 +16,17 @@
        <% end %>
   </div>
     <%end%>
+    <div class="comment_like_holder">
+
      <div class= "comment_form_holder">
        <h3>Leave a comment</h3>
       <%= render 'comments/form', comment: @comment %>
       </div>
-       <div class="like _form_holder">
+
+       <div class="like_form_holder">
         <h3>Like this post</h3>
         <%= render 'likes/form', like: @like %>
         </div>
+      </div>
 </div>
 
