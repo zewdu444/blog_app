@@ -1,6 +1,6 @@
 <div class= "post_card">
 <h4>
- <%= link_to "Post ##{post.id }", "/users/#{@user.id}/posts/#{post.id}" %>
+ <%= link_to "Post ##{post.id }", user_post_path(@user,post) %>
  </h4>
       <p> <%= post.title %> </p>
       <p class="post_counter"><span>comments: <%=post.comments_counter%> </span>
