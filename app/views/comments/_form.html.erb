@@ -1,0 +1,13 @@
+<%= form_with model:[@current_user, @post, Comment.new], url:user_post_comments_path(@current_user, @post) do |form| %>
+  <div>
+    <div>
+      <%= form.label :text%><br>
+      <%= form.text_area :text%>
+      <% form.object.errors.full_messages_for(:text).each do |message|%>
+      <div><%= message %></div>
+      <%end%>
+    </div>
+    <br>
+    <%= form.submit%>
+  </div>
+<%end%>
