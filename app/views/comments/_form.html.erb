@@ -1,7 +1,8 @@
 <%= form_with model:[@current_user, @post, Comment.new], url:user_post_comments_path(@current_user, @post) do |form| %>
-  <div>
+  <div class="comment_form">
+  <h3>Like this post</h3>
     <div>
-      <%= form.label :text%><br>
+      <%= form.label :comment%><br>
       <%= form.text_area :text%>
       <% form.object.errors.full_messages_for(:text).each do |message|%>
       <div><%= message %></div>
