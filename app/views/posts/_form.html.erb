@@ -1,0 +1,21 @@
+<%= form_with model: [@current_user, @current_user.posts.build] do |form| %>
+<div>
+  <div>
+  <%= form.label :title%><br>
+  <%= form.text_field :title%>
+  <% @post.errors.full_messages_for(:title).each do |message|%>
+  <div><%= message %></div>
+  <%end%>
+</div>
+  <br>
+ <div>
+   <%= form.label :text%><br>
+    <%= form.text_area :text%>
+    <% @post.errors.full_messages_for(:text).each do |message|%>
+    <div><%= message %></div>
+    <%end%>
+ </div>
+ <br>
+  <%= form.submit%>
+</div>
+<%end%>
