@@ -11,6 +11,7 @@ class PostsController < ApplicationController
   def new
     @post = @current_user.posts.new
   end
+
   def create
     @post = @current_user.posts.new(post_params)
     if @post.save
@@ -19,7 +20,9 @@ class PostsController < ApplicationController
       render :new
     end
   end
+
   private
+
   def post_params
     params.require(:post).permit(:title, :text)
   end
