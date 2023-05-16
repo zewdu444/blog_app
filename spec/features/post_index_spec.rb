@@ -1,28 +1,17 @@
 require 'rails_helper'
 RSpec.describe 'User post index page:', type: :feature do
   before(:each) do
-    @user_one = User.new(name: 'unique_show', photo: 'http://localhost:3000/anything.jpg', bio: 'Anything test')
-    @user_one.save
-    @post_one = Post.new(title: 'post one', text: 'post one text', author: @user_one)
-    @post_two = Post.new(title: 'post two', text: 'post two text', author: @user_one)
-    @post_three = Post.new(title: 'post three', text: 'post three text', author: @user_one)
-    @post_four = Post.new(title: 'post four', text: 'post four text', author: @user_one)
-    @post_one.save
-    @post_two.save
-    @post_three.save
-    @post_four.save
-    @comment_one = Comment.new(text: 'comment one', author: @user_one, post: @post_one)
-    @comment_two = Comment.new(text: 'comment two', author: @user_one, post: @post_one)
-    @comment_three = Comment.new(text: 'comment three', author: @user_one, post: @post_one)
-    @comment_four = Comment.new(text: 'comment four', author: @user_one, post: @post_one)
-    @comment_five = Comment.new(text: 'comment five', author: @user_one, post: @post_one)
-    @comment_one.save
-    @comment_two.save
-    @comment_three.save
-    @comment_four.save
-    @comment_five.save
-    @like_one = Like.new(author: @user_one, post: @post_one)
-    @like_one.save
+    @user_one = User.create(name: 'unique_show', photo: 'http://localhost:3000/anything.jpg', bio: 'Anything test')
+    @post_one = Post.create(title: 'post one', text: 'post one text', author: @user_one)
+    @post_two = Post.create(title: 'post two', text: 'post two text', author: @user_one)
+    @post_three = Post.create(title: 'post three', text: 'post three text', author: @user_one)
+    @post_four = Post.create(title: 'post four', text: 'post four text', author: @user_one)
+    @comment_one = Comment.create(text: 'comment one', author: @user_one, post: @post_one)
+    @comment_two = Comment.create(text: 'comment two', author: @user_one, post: @post_one)
+    @comment_three = Comment.create(text: 'comment three', author: @user_one, post: @post_one)
+    @comment_four = Comment.create(text: 'comment four', author: @user_one, post: @post_one)
+    @comment_five = Comment.create(text: 'comment five', author: @user_one, post: @post_one)
+    @like_one = Like.create(author: @user_one, post: @post_one)
   end
   scenario 'I can see the users profile picture.' do
     visit user_posts_path(@user_one.id)
@@ -40,7 +29,7 @@ RSpec.describe 'User post index page:', type: :feature do
     visit user_posts_path(@user_one.id)
     expect(page).to have_content("Post ##{@post_one.id}")
   end
-  scenario 'I can see some of the posts body.'do
+  scenario 'I can see some of the posts body.' do
     visit user_posts_path(@user_one.id)
     expect(page).to have_content(@post_one.title)
   end
@@ -49,8 +38,8 @@ RSpec.describe 'User post index page:', type: :feature do
     expect(page).to have_content(@post_one.five_most_recent_comments.first.text)
   end
   scenario 'I can see how many comments a post has.' do
-     visit user_posts_path(@user_one.id)
-      expect(page).to have_content(@post_one.comments.count)
+    visit user_posts_path(@user_one.id)
+    expect(page).to have_content(@post_one.comments.count)
   end
   scenario 'I can see how many likes a post has.' do
     visit user_posts_path(@user_one.id)

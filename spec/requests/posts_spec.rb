@@ -25,7 +25,7 @@ RSpec.describe 'Posts', type: :request do
     end
     it 'post responsed body with correct place holder' do
       get "/users/#{user.id}/posts/"
-      expect(response.body).to include( user.name)
+      expect(response.body).to include(user.name)
     end
   end
   describe 'Post GET /show' do
@@ -39,7 +39,7 @@ RSpec.describe 'Posts', type: :request do
     end
     it 'post detail responsed body with correct place holder' do
       get "/users/#{user.id}/posts/#{post.id}"
-      expect(response.body).to include( user.name)
+      expect(response.body).to include(user.name)
     end
   end
 end

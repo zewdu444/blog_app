@@ -13,8 +13,8 @@ gem 'sprockets-rails'
 gem 'dotenv-rails', groups: %i[development test]
 
 group :development, :test do
-  gem 'rspec-rails', '>= 3.9.0'
   gem 'capybara'
+  gem 'rspec-rails', '>= 3.9.0'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end

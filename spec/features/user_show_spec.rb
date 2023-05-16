@@ -2,16 +2,11 @@ require 'rails_helper'
 
 RSpec.describe 'User show page:', type: :feature do
   before(:each) do
-    @user_one = User.new(name: 'unique_show', photo: 'http://localhost:3000/anything.jpg', bio: 'Anything test')
-    @user_one.save
-    @post_one = Post.new(title: 'post one', text: 'post one text', author: @user_one)
-    @post_two = Post.new(title: 'post two', text: 'post two text', author: @user_one)
-    @post_three = Post.new(title: 'post three', text: 'post three text', author: @user_one)
-    @post_four = Post.new(title: 'post four', text: 'post four text', author: @user_one)
-    @post_one.save
-    @post_two.save
-    @post_three.save
-    @post_four.save
+    @user_one = User.create(name: 'unique_show', photo: 'http://localhost:3000/anything.jpg', bio: 'Anything test')
+    @post_one = Post.create(title: 'post one', text: 'post one text', author: @user_one)
+    @post_two = Post.create(title: 'post two', text: 'post two text', author: @user_one)
+    @post_three = Post.create(title: 'post three', text: 'post three text', author: @user_one)
+    @post_four = Post.create(title: 'post four', text: 'post four text', author: @user_one)
   end
   scenario 'I can see the user profile picture' do
     visit user_path(@user_one.id)
@@ -39,10 +34,10 @@ RSpec.describe 'User show page:', type: :feature do
     visit user_path(@user_one.id)
     expect(page).to have_button('See all posts')
   end
-  scenario  'When I click a users post, it redirects me to that posts show page' do
-   visit user_path(@user_one.id)
-   click_link("Post ##{@user_one.most_three_recent_post.first.id}")
-   expect(page).to have_current_path(user_post_path(@user_one.id,@user_one.most_three_recent_post.first.id))
+  scenario 'When I click a users post, it redirects me to that posts show page' do
+    visit user_path(@user_one.id)
+    click_link("Post ##{@user_one.most_three_recent_post.first.id}")
+    expect(page).to have_current_path(user_post_path(@user_one.id, @user_one.most_three_recent_post.first.id))
   end
   scenario 'When I click the see all posts button, it redirects me to the users posts index page' do
     visit user_path(@user_one.id)
