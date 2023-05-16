@@ -40,6 +40,7 @@
 - Test cases for each controller
 - Add views for user and posts
 - Add forms for posts, comments, and likes
+- Add integtation test and fix n+1 problems
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -91,25 +92,30 @@ To run the project redirecting to the root directory of the project and run the 
 To test the web app run the following command:
 
 ```sh
- rspec spec (  to test the web application)
+ rspec spec ( to test the web application)
 
 ```
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **zewdu erkyhun**
+👤 **Zewdu Erkyhun**
 
-- GitHub: [zewdu444](https://github.com/zewdu444)
+- GitHub: [@zewdu444](https://github.com/zewdu444)
 - Twitter: [@zewdu444](https://twitter.com/zewdu444)
 - LinkedIn: [zewdu-anley](https://www.linkedin.com/in/zewdu-anley/)
 
+👤 **Marko Kermichiev**
+
+- GitHub: [MarkoKermi](https://github.com/MarkoKermi)
+- Twitter: [@MarkoKerm](https://twitter.com/MarkoKerm)
+- LinkedIn: [marko-kermichiev](https://www.linkedin.com/in/marko-kermichiev/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [Integration specs for Views and fixing n+1 problems.]
+- [add devise gem for authentication]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,7 +135,7 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse community for the support and guidance.
+we would like to thank microverse community for the support and guidance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
