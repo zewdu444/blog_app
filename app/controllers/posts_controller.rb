@@ -26,7 +26,6 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @post = @user.posts.find(params[:id])
     @post.destroy
-    Rails.logger.info("Post deleted successfully!")
     redirect_to user_posts_path(@user)
   end
 

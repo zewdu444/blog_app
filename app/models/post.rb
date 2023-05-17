@@ -12,8 +12,9 @@ class Post < ApplicationRecord
   def update_user_post_counter
     author.increment!(:posts_counter)
   end
+
   def decrement_user_post_counter
-     author.decrement!(:posts_counter)
+    author.decrement!(:posts_counter)
   end
 
   def five_most_recent_comments
