@@ -1,5 +1,4 @@
 <p><span>Username:</span><%=comment.author.name %>
-  id <%=comment.id %>
   <span>Comment:</span><%=comment.text %>
   <button>
     <%= link_to 'X',user_post_comment_path(@user, comment.post, comment.id) , data: {
