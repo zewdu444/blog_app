@@ -10,6 +10,9 @@ gem 'rails-controller-testing'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
+gem 'devise'
+gem 'mailcatcher'
+
 gem 'dotenv-rails', groups: %i[development test]
 
 group :development, :test do

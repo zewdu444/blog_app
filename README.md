@@ -41,6 +41,7 @@
 - Add views for user and posts
 - Add forms for posts, comments, and likes
 - Add integtation test and fix n+1 problems
+- Add authentication using devise gem
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -115,7 +116,7 @@ To test the web app run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [add devise gem for authentication]
+- [add cancancan gem for authorization]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
