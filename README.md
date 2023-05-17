@@ -42,6 +42,7 @@
 - Add forms for posts, comments, and likes
 - Add integtation test and fix n+1 problems
 - Add authentication using devise gem
+- Add authorization using cancancan gem
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -116,7 +117,7 @@ To test the web app run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [add cancancan gem for authorization]
+- [add API endpoints]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
