@@ -1,6 +1,6 @@
 <p><span>Username:</span><%=comment.author.name %>
   <span>Comment:</span><%=comment.text %>
-  <% if can? :destroy, comment%>
+  <% if can? :destroy, comment %>
     <button>
       <%= link_to 'X',user_post_comment_path(@user, comment.post, comment.id) , data: {
                     turbo_method: :delete,
