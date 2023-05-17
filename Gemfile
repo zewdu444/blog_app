@@ -11,6 +11,7 @@ gem 'rails-controller-testing'
 gem 'sprockets-rails'
 
 gem 'devise'
+gem 'mailcatcher'
 
 gem 'dotenv-rails', groups: %i[development test]
 
