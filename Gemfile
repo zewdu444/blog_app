@@ -12,7 +12,7 @@ gem 'sprockets-rails'
 
 gem 'devise'
 gem 'mailcatcher'
-
+gem 'cancancan'
 gem 'dotenv-rails', groups: %i[development test]
 
 group :development, :test do

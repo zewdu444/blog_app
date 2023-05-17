@@ -1,2 +1,10 @@
 <p><span>Username:</span><%=comment.author.name %>
-<span>Comment:</span><%=comment.text %> </p>
+  id <%=comment.id %>
+  <span>Comment:</span><%=comment.text %>
+  <button>
+    <%= link_to 'X',user_post_comment_path(@user, comment.post, comment.id) , data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
+  </button>
+</p>
