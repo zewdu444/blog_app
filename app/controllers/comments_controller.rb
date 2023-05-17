@@ -1,7 +1,6 @@
 class CommentsController < ApplicationController
   def new
     @post = current_user.posts.find(params[:post_id])
-
   end
 
   def create
