@@ -43,7 +43,7 @@
 - Add integtation test and fix n+1 problems
 - Add authentication using devise gem
 - Add authorization using cancancan gem
-
+- Add API endpoint
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,12 +112,11 @@ To test the web app run the following command:
 - Twitter: [@MarkoKerm](https://twitter.com/MarkoKerm)
 - LinkedIn: [marko-kermichiev](https://www.linkedin.com/in/marko-kermichiev/)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [add API endpoints]
+- [add API documentation]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
