@@ -5,7 +5,6 @@ class CommentsController < ApplicationController
     @post = @user.posts.find(params[:post_id])
   end
 
-
   def create
     @user = current_user
     @post = Post.find(params[:post_id])
@@ -15,13 +14,12 @@ class CommentsController < ApplicationController
     respond_to do |format|
       if @comment.save
         format.html { redirect_to request.referrer, notice: 'Comment was successfully created.' }
-        format.json { render Json: @comment, status: :created}
+        format.json { render Json: @comment, status: :created }
       else
-        format.html {render :new}
-        format.json {render json: { errors: @comment.errors.full_messages }, status: :unprocessable_entity }
+        format.html { render :new }
+        format.json { render json: { errors: @comment.errors.full_messages }, status: :unprocessable_entity }
       end
     end
-
   end
 
   def destroy

@@ -6,10 +6,9 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.xml  { render xml: @posts }
+      format.xml { render xml: @posts }
       format.json { render json: @posts }
     end
-
   end
 
   def show
@@ -17,7 +16,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     respond_to do |format|
       format.html
-      format.xml  { render xml: @post.comments }
+      format.xml { render xml: @post.comments }
       format.json { render json: @post.comments }
     end
   end
