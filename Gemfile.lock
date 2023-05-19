@@ -321,6 +321,7 @@ DEPENDENCIES
   rails-controller-testing
   rspec-rails (>= 3.9.0)
   rswag
+  rswag-specs
   selenium-webdriver
   sprockets-rails
   stimulus-rails

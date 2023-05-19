@@ -20,6 +20,7 @@ group :development, :test do
   gem 'rspec-rails', '>= 3.9.0'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem "rswag-specs"
 end
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
