@@ -9,7 +9,7 @@ gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 gem 'rails-controller-testing'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
-
+gem 'rswag'
 gem 'cancancan'
 gem 'devise'
 gem 'dotenv-rails', groups: %i[development test]
